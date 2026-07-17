@@ -23,7 +23,7 @@ O principal objetivo deste projeto é demonstrar competências práticas em cibe
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas Utilizadas
+## Tecnologias e Ferramentas Utilizadas
 
 *   *Recolha de Inteligência (OSINT):* TheHarvester
 *   *Reconhecimento de Rede:* Nmap
