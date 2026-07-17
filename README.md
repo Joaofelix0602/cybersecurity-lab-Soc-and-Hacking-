@@ -7,9 +7,6 @@ Este repositório documenta um projeto académico-prático focado na avaliação
 ##  Estrutura do Repositório
 
 Para garantir as boas práticas de organização de um projeto de auditoria, os ficheiros estão estruturados da seguinte forma:
-
-*   scripts/anonimizar.sh -> Script Bash automatizado para proteção de dados médicos.
-*   docs/nmap_scan.txt -> Log bruto com o varrimento completo de portas e serviços.
 *   README.md -> Este guia de documentação principal.
 
 ---
@@ -36,14 +33,13 @@ O principal objetivo deste projeto é demonstrar competências práticas em cibe
 
 ---
 
-## 📊 Metodologia e Fases do Projeto
+##  Metodologia e Fases do Projeto
 
 ### 1. Reconhecimento Passivo (OSINT)
 Utilização do *TheHarvester* para mapear a pegada digital externa do hospital, procurando possíveis subdomínios expostos ou fugas de emails institucionais em fontes públicas.
 
 ### 2. Auditoria e Mapeamento de Rede
 Execução do *Nmap* para realizar varrimentos de portas e identificação de versões de serviços ativos nos servidores do hospital. A análise focou-se nos serviços expostos nas portas do FTP, SSH e Telnet.
-> 📁 O relatório técnico gerado pelo varrimento pode ser consultado diretamente em [docs/nmap_scan.txt](docs/nmap_scan.txt).
 
 ### 3. Teste de Intrusão Baseado em Dicionário
 Simulação de um ataque de força bruta direcionado ao serviço FTP utilizando a ferramenta *Hydra, cruzando uma *wordlist de credenciais comuns para testar a robustez das políticas de autenticação da instituição.
@@ -53,7 +49,6 @@ Inspeção minuciosa do ficheiro auth.log (diretório /var/log) recolhido do ser
 
 ### 5. Engenharia de Privacidade e Anonimização de Dados
 Manipulação de ficheiros sensíveis em texto limpo (lista_utentes.txt). Foi desenvolvida uma pipeline automatizada para mascarar os identificadores diretos dos pacientes, garantindo a conformidade na proteção de dados médicos.
-> 📁 O código-fonte do script de automação está disponível em [scripts/anonimizar.sh](scripts/anonimizar.sh).
 
 ---
 
